@@ -1,0 +1,55 @@
+{
+  "name": "@charlotte/micro-cli",
+  "version": "1.0.0",
+  "description": "多项目发版工具",
+  "main": "lib/index.js",
+  "keywords": [
+    "cli",
+    "deploy",
+    "build",
+    "micro-frontend",
+    "automation",
+    "多项目",
+    "发版工具"
+  ],
+  "author": "charlotte",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bin": {
+    "micro-cli": "bin/main.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run test",
+    "prepack": "echo 'Preparing package for publishing...'",
+    "postpack": "echo 'Package prepared successfully!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charlotte1018/micro-cli.git"
+  },
+  "homepage": "https://github.com/Charlotte1018/micro-cli#readme",
+  "bugs": {
+    "url": "https://github.com/Charlotte1018/micro-cli/issues"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "config/",
+    "README.md",
+    "package.json"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.1",
+    "figlet": "^1.9.3",
+    "inquirer": "^8.2.6",
+    "ora": "5.4.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "new_offer_front": {
+    "gitPath": "",
+    "buildDir": "dist",
+    "description": "",
+    "targetDir": "",
+    "gitDir": "",
+    "targetConfigs": [
+      {
+        "name": "测试",
+        "branch": "dev",
+        "buildCommand": "npm run build",
+        "targetBranch": "test",
+        "targetDir": ""
+      },
+      {
+        "name": "预发",
+        "branch": "pre",
+        "buildCommand": "npm run build",
+        "targetBranch": "pre",
+        "targetDir": ""
+      },
+      {
+        "name": "生产",
+        "branch": "main",
+        "buildCommand": "npm run build",
+        "targetBranch": "main",
+        "targetDir": ""
+      }
+    ]
+  }
+}
